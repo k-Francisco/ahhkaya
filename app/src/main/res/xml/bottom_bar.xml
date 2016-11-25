@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_bottombar_home"
+        title="Home"
+        barColorWhenSelected="#FF5252" />
+    <tab
+        id="@+id/tab_notification"
+        icon="@drawable/bottombar_notifications"
+        title="Notification"
+        barColorWhenSelected="#FF9800" />
+    <tab
+        id="@+id/tab_leaderboard"
+        icon="@drawable/bottombar_leaderboard"
+        title="Leaderboard"
+        barColorWhenSelected="#7B1FA2" />
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/bottombar_profile"
+        title="Profile"
+        barColorWhenSelected="@color/colorAccent" />
+</tabs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddad0"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/dotleft"
+        android:id="@+id/dotleft"
+        android:scaleX=".01"
+        android:scaleY=".01"
+        app:layout_constraintBottom_toTopOf="@+id/e"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/e"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:id="@+id/e"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/dotright"
+        android:id="@+id/dotright"
+        android:scaleX=".01"
+        android:scaleY=".01"
+        app:layout_constraintBottom_toTopOf="@+id/e"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="40dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/slogan"
+        android:id="@+id/slogan"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="170dp" />
+
+</android.support.constraint.ConstraintLayout>

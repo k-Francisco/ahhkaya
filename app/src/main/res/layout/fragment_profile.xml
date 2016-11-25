@@ -1,0 +1,201 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.johncarter.ahhkaya.Fragments.Profile">
+
+    <RelativeLayout
+        xmlns:attribute="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top">
+
+
+
+        <developer.shivam.library.CrescentoImageView
+            android:id="@+id/crescentoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:elevation="20dp"
+            android:scaleType="centerCrop"
+            attribute:curvature="50dp"
+            attribute:tintMode="manual"
+            attribute:tintColor="#FFFFFF"
+            android:src="@drawable/profile_back"
+            attribute:tintAlpha="50" />
+
+
+        <developer.shivam.library.CrescentoContainer
+            android:id="@+id/crescentoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:elevation="20dp"
+            attribute:curvature="50dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/meme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#d35400"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameText"
+                android:text="Anton Ven Wycoco"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/profile_image"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textSize="23sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionText"
+                android:text="Programmer"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                />
+
+        </developer.shivam.library.CrescentoContainer>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crescentoImageView"
+            android:paddingLeft="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/pointsImg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile_sixty"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Points"
+                    android:layout_below="@+id/pointsImg"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_edit"
+                    android:id="@+id/editImg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Edit Profile"
+                    android:layout_below="@+id/editImg"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="130dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/portfolioImg"
+                    android:layout_width="75dp"
+                    android:layout_height="78dp"
+                    android:src="@drawable/profile_folder"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Portfolio"
+                    android:paddingTop="2dp"
+                    android:layout_below="@+id/portfolioImg"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_logout"
+                    android:id="@+id/logoutImg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Logout"
+                    android:layout_below="@+id/logoutImg"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
