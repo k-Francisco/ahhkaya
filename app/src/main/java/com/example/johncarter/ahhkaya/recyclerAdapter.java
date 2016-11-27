@@ -2,7 +2,8 @@ package com.example.johncarter.ahhkaya;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
@@ -83,7 +84,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.ViewHo
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout,parent,false);
         ViewHolder viewHolder = new ViewHolder(v);
         final Context context = parent.getContext();
-        fm = ((Activity)context).getFragmentManager();
+        fm = ((FragmentActivity)context).getSupportFragmentManager();
         return viewHolder;
     }
 

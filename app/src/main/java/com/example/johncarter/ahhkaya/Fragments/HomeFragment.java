@@ -2,7 +2,7 @@ package com.example.johncarter.ahhkaya.Fragments;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         recyclerView = (RecyclerView) rootview.findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(rootview.getContext());
         recyclerView.setLayoutManager(layoutManager);
-
+        recyclerView.setNestedScrollingEnabled(false);
         adapter = new recyclerAdapter();
         recyclerView.setAdapter(adapter);
         return rootview;

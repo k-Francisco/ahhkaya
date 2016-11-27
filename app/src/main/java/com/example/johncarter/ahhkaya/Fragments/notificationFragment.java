@@ -1,7 +1,7 @@
 package com.example.johncarter.ahhkaya.Fragments;
 
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +22,7 @@ public class notificationFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_notification,container,false);
         fl = (FrameLayout) rootView.findViewById(R.id.menu_frame);
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
+        listView.setNestedScrollingEnabled(false);
         NotificationController controller = new NotificationController();
         notificationAdapter adapter = new notificationAdapter(rootView.getContext(), R.layout.fragment_notification,
                 controller.getNotifications());

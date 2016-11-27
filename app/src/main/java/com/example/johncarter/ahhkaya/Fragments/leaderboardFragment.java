@@ -1,6 +1,6 @@
 package com.example.johncarter.ahhkaya.Fragments;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -26,6 +26,7 @@ public class leaderboardFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_leader_board,container,false);
         fl = (FrameLayout) rootView.findViewById(R.id.menu_frame);
         ListView listView = (ListView) rootView.findViewById(R.id.listViewLeaderboard);
+        listView.setNestedScrollingEnabled(false);
         LeaderboardController controller = new LeaderboardController();
         LeaderBoardAdapter adapter = new LeaderBoardAdapter(rootView.getContext(), R.layout.leaderboard_list_layout,
                 controller.getLeaderBoardModel());
